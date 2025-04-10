@@ -1,0 +1,68 @@
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+.container {
+    width: 70%;
+
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.leftDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    span {
+        font: 500 16px;
+        line-height: 16px;
+        margin: 0 10px;
+        color: #CC0D39;
+    }
+
+    h2 {
+        font-weight: 400;
+        margin: 0px;
+        font-size: 36px;
+        line-height: 54px;
+    }
+}
+
+.rightDiv{
+    padding: 6px 8px;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+}
+
+.rightDiv button{
+    padding: 12px 20px;
+    line-height: 16px;
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.best{
+    background-color: black !important;
+    color: white;
+}
+
+.productCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}

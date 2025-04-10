@@ -1,15 +1,19 @@
 import React from 'react';
-import Header from './components/header/Header';
-import Footer from './components/middle/Middle';
 import './App.css';
+import Home from './envatomarket/home/Home'
+
+
+
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Footer />
+      <Home/>
     </>
   );
 };
 
 export default App;
+
+
+

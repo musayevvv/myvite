@@ -54,7 +54,6 @@ nav {
     z-index: 1;
     transition: all .4s ease-out 0s;
     background: #FE5F41;
-    transition: all 1s ease;
 }
 
 .pages a:hover {
