@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Home from './envatomarket/home/Home'
+import Home from './register/home/Home'
 
 
 
