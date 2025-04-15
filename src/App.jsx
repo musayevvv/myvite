@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Home from './register/home/Home'
+import Home from './basketwish/home/Home'
 
 
 
