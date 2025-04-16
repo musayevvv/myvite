@@ -1,19 +1,13 @@
 import React from 'react';
 import './App.css';
-import Home from './basketwish/home/Home'
-
-
-
+import Router from './router/Router';
 
 const App = () => {
   return (
     <>
-      <Home/>
+      <Router />
     </>
   );
 };
 
 export default App;
-
-
-

@@ -6,11 +6,11 @@ import Cards from '../cards/Cards'
 
 const Home = () => {
     return (
-        <div>
+   
             <Layout>
          <Cards/>
             </Layout>
-        </div>
+     
     )
 }
 
