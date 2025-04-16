@@ -41,26 +41,30 @@
     gap: 15px;
     flex-direction: column;
     text-align: center;
+    height: 30%;
 }
 
-.buttonBox{
+.buttonBox {
     display: flex;
     gap: 10px;
-    align-items: center;
-    justify-content: center;
 }
 
-button{
-    border: none;
-    width: 100px;
-    height: 70px;
+.buttonBox button {
+    width: 100%;
     padding: 10px;
-    color: black;
-    font-size: 20px;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    /* Soz bölünməsin */
+    text-align: center;
 }
 
-button:hover{
-    color: white;
-    background-color: black;
-
+.buttonBox button:hover {
+    background-color: #d9363e;
 }

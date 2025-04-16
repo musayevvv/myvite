@@ -27,7 +27,7 @@ const Basket = () => {
             {basket.map(item => (
               <li key={item.id} className={styles.listItem}>
                 <img src={item.image} alt={item.title} className={styles.image} />
-                <div>{item.title} - {item.count} ədəd - ${item.price}</div>
+                <div className={styles.info}>{item.title} - {item.count} ədəd - ${item.price}</div>
                 <button className={styles.deleteBtn} onClick={() => handleDelete(item.id)}>Sil</button>
               </li>
             ))}

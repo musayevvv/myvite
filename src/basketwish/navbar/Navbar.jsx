@@ -11,6 +11,9 @@ const Navbar = () => {
       <div className={styles.logo}>
         <Link to="/basket">Basket</Link>
       </div>
+      <div className={styles.logo}>
+        <Link to="/wish">Wish</Link>
+      </div>
     </nav>
   );
 };
