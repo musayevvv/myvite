@@ -7,15 +7,11 @@ import Cards from '../cards/Cards'
 
 const Home = () => {
     return (
-   
-            <Layout>
-         <Cards/>
-         <ToastContainer />
-            </Layout>
-     
+        <Layout>
+            <Cards />
+            <ToastContainer />
+        </Layout>
     )
 }
-
-
 
 export default Home

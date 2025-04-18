@@ -1,0 +1,55 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+.container{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    gap: 7px;
+    font-size: 24px;
+    font-weight: 500 !important;
+
+    i{
+        font-size: 1.55rem;
+    }
+}
+
+.buzz{
+    color: #4232c2 !important;
+}
+
+.components{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.pages{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+
+    a{
+        color: rgba(0, 0, 0, .55);
+        text-decoration: none;
+    }
+}
+
+.navbarIcon{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    font-size: 1.5rem;
+    color: #4232c2
+}
