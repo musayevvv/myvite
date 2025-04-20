@@ -112,64 +112,71 @@ const Contact = () => {
 
 
                 <form onSubmit={formik.handleSubmit} className={styles.form}>
-                    <div className={styles.twoinput}>
-                        <input
-                            type="text"
-                            name="Name"
-                            placeholder="name"
-                            value={formik.values.Name}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
-                        />
-                        {formik.touched.Name && formik.errors.Name && (
-                            <div className={styles.error}>{formik.errors.Name}</div>
-                        )}
+                    <div className={styles.inputRow}>
+                        <div>
+                            <input
+                                type="text"
+                                name="Name"
+                                placeholder="Ad"
+                                value={formik.values.Name}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                            />
+                            {formik.touched.Name && formik.errors.Name && (
+                                <div className={styles.error}>{formik.errors.Name}</div>
+                            )}
+                        </div>
 
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="email"
-                            value={formik.values.email}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
-                        />
-                        {formik.touched.email && formik.errors.email && (
-                            <div className={styles.error}>{formik.errors.email}</div>
-                        )}
+                        <div>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Email"
+                                value={formik.values.email}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                            />
+                            {formik.touched.email && formik.errors.email && (
+                                <div className={styles.error}>{formik.errors.email}</div>
+                            )}
+                        </div>
                     </div>
 
-                    <div style={styles.twoInput}>
-                        <input
-                            type="text"
-                            name="phone"
-                            placeholder="Phone"
-                            value={formik.values.phone}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
-                        />
-                        {formik.touched.phone && formik.errors.phone && (
-                            <div className={styles.error}>{formik.errors.phone}</div>
-                        )}
+                    <div className={styles.inputRow}>
+                        <div>
+                            <input
+                                type="text"
+                                name="phone"
+                                placeholder="Telefon"
+                                value={formik.values.phone}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                            />
+                            {formik.touched.phone && formik.errors.phone && (
+                                <div className={styles.error}>{formik.errors.phone}</div>
+                            )}
+                        </div>
 
-
-                        <input
-                            type="text"
-                            name="companyName"
-                            placeholder="company name"
-                            value={formik.values.companyName}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
-                        />
-                        {formik.touched.companyName && formik.errors.companyName && (
-                            <div className={styles.error}>{formik.errors.companyName}</div>
-                        )}
+                        <div>
+                            <input
+                                type="text"
+                                name="companyName"
+                                placeholder="Şirkət Adı"
+                                value={formik.values.companyName}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                            />
+                            {formik.touched.companyName && formik.errors.companyName && (
+                                <div className={styles.error}>{formik.errors.companyName}</div>
+                            )}
+                        </div>
                     </div>
 
                     <div>
                         <input
                             type="text"
                             name="subject"
-                            placeholder="subject"
+                            placeholder="Mövzu"
                             value={formik.values.subject}
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
@@ -180,10 +187,9 @@ const Contact = () => {
                     </div>
 
                     <div>
-                        <input
-                            type="text"
+                        <textarea
                             name="message"
-                            placeholder="message"
+                            placeholder="Mesaj"
                             value={formik.values.message}
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
@@ -192,17 +198,12 @@ const Contact = () => {
                             <div className={styles.error}>{formik.errors.message}</div>
                         )}
                     </div>
-
-                    <button type="submit" className={styles.submitButton}>Göndər</button>
+                    <div className={styles.btnBox}>
+                        <button type="submit" className={styles.submitButton}>Göndər</button>
+                    </div>
                 </form>
 
-
             </div>
-
-
-
-
-
         </section>
     )
 }

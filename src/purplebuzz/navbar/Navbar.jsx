@@ -4,6 +4,8 @@ import { BiBuildings } from "react-icons/bi";
 import { FaRegBell } from "react-icons/fa";
 import { MdOutlineSettings } from "react-icons/md";
 import { FaRegCircleUser } from "react-icons/fa6";
+import { RxHamburgerMenu } from "react-icons/rx";
+
 import { Link } from 'react-router';
 
 const Navbar = () => {
@@ -28,6 +30,9 @@ const Navbar = () => {
                         <MdOutlineSettings />
                         <FaRegCircleUser />
                     </div>
+                </div>
+                <div className={styles.hamburgerDiv}>
+                <RxHamburgerMenu className={styles.hamburger} />
                 </div>
             </div>
         </nav>

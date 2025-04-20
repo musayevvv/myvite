@@ -107,7 +107,7 @@
 .lastDiv {
     margin-top: 60px;
     display: flex;
-    justify-content: space-between;
+    gap: 100px;
     width: 70%;
 }
 
@@ -115,6 +115,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 400px;
 }
 
 .infoBox {
@@ -144,6 +145,7 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+    width: 150px;
 }
 
 .text p {
@@ -154,39 +156,199 @@
     color: #6c757d;
 }
 
-.error {
-    color: red;
-    font-size: 14px;
-    margin-bottom: 5px;
+
+
+form {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputRow {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4%;
+    justify-content: space-between;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.inputRow>div {
+    width: 100%;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
 }
 
 .submitButton {
-    padding: 10px 20px;
+    padding: 12px 20px;
     background-color: #6c63ff;
     color: white;
+    font-weight: 600;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    width: 250px;
+    transition: background-color 0.3s ease;
 }
 
-
-input {
-
-
+.submitButton:hover {
+    background-color: #5548d8;
 }
 
-form{
-    width: 900px;
-}
-
-.twoinput{
+.btnBox {
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+}
 
-    input{
-        width: 48%;
-        height: 50px;
-        padding: 10px ;
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+
+
+
+@media (max-width: 1100px) {
+    .rightDivImage {
+        height: 400px;
+        width: 400px;
     }
+
+    .create p {
+        width: 750px;
+    }
+}
+
+
+
+@media (max-width: 968px) {
+
+    .contact>.container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rightDivImage {
+        height: 200px;
+        width: 300px;
+    }
+
+    .lastDiv {
+        flex-direction: column;
+    }
+
+    .leftDiv p {
+        width: 670px;
+    }
+
+    .create p {
+        width: 670px;
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 797px) {
+
+    .leftDiv p {
+        width: 580px;
+    }
+
+    .create p {
+        width: 580px;
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 690px) {
+
+    .leftDiv p {
+        width: 450px;
+    }
+
+    .create p {
+        width: 450px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 615px) {
+
+
+    .create p {
+        width: 350px;
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 530px) {
+
+    .leftDiv p {
+        width: 350px;
+    }
+
+    .create p {
+        width: 350px;
+        text-align: left;
+    }
+
+    .infoBox {
+        width: 220px;
+    }
+
+    .info {
+        width: 250px;
+    }
+}
+
+
+@media (max-width: 440px) {
+
+    .leftDiv p {
+        width: 300px;
+    }
+
+    .create p {
+        width: 300px;
+        text-align: left;
+    }
+
+
+}
+
+@media (max-width: 335px) {
+
+    .leftDiv p {
+        width: 250px;
+    }
+
+    .create p {
+        width: 250px;
+        text-align: left;
+    }
+
 }
