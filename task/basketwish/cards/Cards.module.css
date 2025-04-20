@@ -1,0 +1,70 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 20%;
+    height: 370px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.cardImage {
+    height: 30%;
+    width: 90%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+}
+
+.body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+    text-align: center;
+    height: 30%;
+}
+
+.buttonBox {
+    display: flex;
+    gap: 10px;
+}
+
+.buttonBox button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    /* Soz bölünməsin */
+    text-align: center;
+}
+
+.buttonBox button:hover {
+    background-color: #d9363e;
+}

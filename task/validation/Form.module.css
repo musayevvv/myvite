@@ -1,0 +1,48 @@
+.formContainer {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #f9f9f9;  
+}
+
+.label {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 18px;
+    font-weight: 500;
+    color: #222;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+}
+
+.button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #111;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}

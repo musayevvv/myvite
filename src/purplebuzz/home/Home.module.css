@@ -1,0 +1,334 @@
+/* Reset */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://templatemo.com/templates/templatemo_561_purple_buzz/assets/img/banner-bg-01.jpg');
+    background-position: center;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerContent {
+    text-align: left;
+    width: 70%;
+    color: #4a4ae2;
+}
+
+.bannerContent h1 {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.bannerContent h1 span {
+    font-weight: 700;
+}
+
+.underline {
+    width: 200px;
+    height: 3px;
+    background-color: #4a4ae2;
+    margin: 1rem 0;
+    border: none;
+}
+
+.bannerContent p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.bannerContent a {
+    color: #4a4ae2;
+    text-decoration: none;
+}
+
+.ctaButton {
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    border: 2px solid #4a4ae2;
+    background: transparent;
+    color: #4a4ae2;
+    font-size: 1.1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ctaButton:hover {
+    background-color: #4a4ae2;
+    color: #fff;
+}
+
+/* Services Section */
+.services {
+    padding: 80px 0px;
+    background: #fff;
+    text-align: center;
+}
+
+.servicesTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.serviceRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.serviceIcon {
+    color: #6c63ff;
+    font-size: 40px;
+}
+
+.serviceInfo {
+    max-width: 600px;
+    text-align: left;
+}
+
+.serviceInfo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.lineAccent {
+    width: 120px;
+    height: 4px;
+    background-color: #6c63ff;
+    margin-bottom: 15px;
+}
+
+.serviceInfo p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+    padding: 20px;
+    background: #6666ee;
+}
+
+.tabButton {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.tabButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.tabActive {
+    background-color: #3c3cda;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Services Grid */
+.gridSection {
+    padding: 60px 0px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.gridContainer {
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+@media (max-width: 1151px) {
+    .gridContainer {
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 170px;
+        row-gap: 30px;
+    }
+
+    .worksGrid {
+        justify-content: center !important;
+    }
+
+
+}
+
+.gridCard {
+    width: 270px;
+    height: 290px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.gridCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.gridCard:hover img {
+    transform: scale(1.05);
+}
+
+.cardOverlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+}
+
+.cardOverlay h4 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding: 6px 10px;
+}
+
+.cardOverlay p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Featured Box */
+.featuredBox {
+    background: #6c63ff;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.featuredContent {
+    max-width: 1200px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.featuredText {
+    flex: 2;
+    text-align: center;
+}
+
+.featuredText h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.featuredText p {
+    font-size: 1rem;
+}
+
+.featuredButton {
+    flex: 1;
+    text-align: center;
+}
+
+.featuredButton button {
+    background: #4a3aff;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.featuredButton button:hover {
+    background-color: #372dcf;
+}
+
+/* Works Section */
+.worksSection {
+    padding: 60px 0px;
+    background: #f9f9f9;
+}
+
+.worksGrid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.worksItem {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.worksItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+
+.worksItem:hover img {
+    opacity: 1;
+}
+
+.worksText {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.worksText h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.worksText p {
+    font-size: 0.9rem;
+    margin: 4px 0 0;
+}
